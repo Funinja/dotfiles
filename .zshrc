@@ -74,10 +74,12 @@ plugins=(
   git
   z
   history
-  zsh-autosuggestions
-  )
+)
 
 source $ZSH/oh-my-zsh.sh
+eval "$(starship init zsh)"
+
+export PATH=~/Helpful-SH-Commands/commands:$PATH
 
 # User configuration
 
@@ -104,5 +106,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval "$(starship init zsh)"
-export PATH=~/Helpful-SH-Commands/commands:$PATH
